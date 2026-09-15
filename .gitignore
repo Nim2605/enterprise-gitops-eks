@@ -4,7 +4,6 @@
 *.tfstate.***.tfplan
 crash.log
 crash.*.log
-.t**raform.lock.hcl
 
 # Terraform vari**le files
 *.tfvars
