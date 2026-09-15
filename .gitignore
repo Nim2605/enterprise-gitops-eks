@@ -1,0 +1,40 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.***.tfplan
+crash.log
+crash.*.log
+.t**raform.lock.hcl
+
+# Terraform vari**le files
+*.tfvars
+*.tfvars.json
+
+***ecrets
+*.pem
+*.key
+*.crt
+*.p12
+****x
+.env
+.env.*
+
+# Ansible
+*.retry***sible***ventory/*/secrets*
+
+# Kubernetes**.secret.yaml
+secrets.yaml
+
+#***
+.DS_Store
+Thumbs.db
+desktop.ini******E
+.vscode/
+.idea/
+
+# Logs
+*.log
+***Temporary files
+*.tmp
+*.temp
+```***
