@@ -1,39 +1,53 @@
 # Terraform
 **/.terraform/
 *.tfstate
-*.tfstate.***.tfplan
+*.tfstate.*
+*.tfplan
 crash.log
 crash.*.log
 
-# Terraform vari**le files
+# Terraform variable files
 *.tfvars
 *.tfvars.json
 
-***ecrets
+# Keep Terraform dependency lock files tracked
+!.terraform.lock.hcl
+
+# Secrets / certificates
+secrets/
 *.pem
 *.key
 *.crt
 *.p12
-****x
+
+# Environment files
 .env
 .env.*
 
 # Ansible
-*.retry***sible***ventory/*/secrets*
+*.retry
+ansible/inventory/*/secrets*
 
-# Kubernetes**.secret.yaml
+# Kubernetes secrets
+*.secret.yaml
 secrets.yaml
 
-#***
+# OS files
 .DS_Store
 Thumbs.db
-desktop.ini******E
+desktop.ini
+
+# IDE
 .vscode/
 .idea/
 
 # Logs
 *.log
-***Temporary files
+
+# Temporary files
 *.tmp
 *.temp
-```***
+
+# SSH keys
+keys/
+*.tfplan
