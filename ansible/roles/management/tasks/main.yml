@@ -13,6 +13,5 @@
       - tar
       - gzip
       - jq
-      - curl
       - wget
     state: present
