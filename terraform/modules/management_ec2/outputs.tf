@@ -22,3 +22,8 @@ output "iam_role_name" {
   description = "IAM role attached to the management EC2 instance."
   value       = aws_iam_role.management.name
 }
+
+output "iam_role_arn" {
+  description = "IAM role ARN used by the management EC2 instance"
+  value       = aws_iam_role.management.arn
+}

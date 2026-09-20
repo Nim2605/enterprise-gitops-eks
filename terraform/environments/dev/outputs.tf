@@ -37,3 +37,18 @@ output "management_private_ip" {
   description = "Management EC2 private IP."
   value       = module.management_ec2.instance_private_ip
 }
+
+output "eks_cluster_name" {
+  description = "EKS cluster name"
+  value       = module.eks.cluster_name
+}
+
+output "eks_cluster_endpoint" {
+  description = "EKS cluster API endpoint"
+  value       = module.eks.cluster_endpoint
+}
+
+output "eks_node_group_name" {
+  description = "EKS node group name"
+  value       = module.eks.node_group_name
+}

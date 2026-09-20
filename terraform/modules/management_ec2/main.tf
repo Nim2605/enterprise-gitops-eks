@@ -94,3 +94,21 @@ resource "aws_key_pair" "management" {
     Name = "${var.project_name}-${var.environment}-management-key"
   }
 }
+
+resource "aws_iam_role_policy" "eks_describe" {
+  name = "${var.project_name}-${var.environment}-eks-describe"
+  role = aws_iam_role.management.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "eks:DescribeCluster"
+        ]
+        Resource = "*"
+      }
+    ]
+  })
+}
