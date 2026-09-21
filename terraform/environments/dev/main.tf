@@ -56,3 +56,15 @@ module "eks" {
   node_min_size     = 1
   node_max_size     = 3
 }
+
+module "ecr" {
+  source = "../../modules/ecr"
+
+  project_name = var.project_name
+  environment  = var.environment
+
+  repository_names = [
+    "frontend",
+    "backend"
+  ]
+}

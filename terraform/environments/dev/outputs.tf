@@ -52,3 +52,8 @@ output "eks_node_group_name" {
   description = "EKS node group name"
   value       = module.eks.node_group_name
 }
+
+output "ecr_repository_urls" {
+  description = "ECR repository URLs"
+  value       = module.ecr.repository_urls
+}
